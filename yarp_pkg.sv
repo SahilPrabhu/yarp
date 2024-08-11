@@ -23,4 +23,10 @@ package yarp_pkg;
     OP_SLTU,
     OP_SLT
   }alu_op_t;
+  
+  typedef enum logic[1:0]{ // For appropriate sign extension of data input
+    BYTE      = 2'b00,
+    HALF_WORD = 2'b01,
+    WORD      = 2'b11
+  }mem_access_size_t;
 endmodule
