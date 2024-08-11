@@ -10,4 +10,17 @@ package yarp_pkg;
     B_TYPE   = 7'h63,
     J_TYPE   = 7'h6F
   } riscv_op_t;
+  
+  typedef enum logic [3:0]{ // Defining all ALU operations
+    OP_ADD,
+    OP_SUB,
+    OP_SLL,
+    OP_SRL,
+    OP_SRA,
+    OP_OR,
+    OP_AND,
+    OP_XOR,
+    OP_SLTU,
+    OP_SLT
+  }alu_op_t;
 endmodule
